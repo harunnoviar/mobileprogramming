@@ -25,7 +25,27 @@ Beberapa hal keterangan dari kode baris program diatas antara lain:
 $ flutter pub add english_words
 ```
 
-- Menambahkan <b>\_saved</b> pada class <b>\_RandomWordsState</b>
+- Menambahkan <b>\_saved</b> pada class <b>\_RandomWordsState</b> menggunakan keyword final, tujuannya adalah menyimpan WordPair yang difavoritkan oleh pengguna aplikasi.
+
+```ruby
+final _saved = <WordPair>{};
+```
+
+- Pada function <b>\_bulidRow</b> tambahkan dengan keyword final variable <b>alreadySaved</b>
+
+```ruby
+final alreadySaved = _saved.contains(pair);
+```
+
+- Tambahkan juga baris berikut pada function <b>\_bulidRow</b> dibagian <b>ListTile</b> untuk menambahakn icon "heart".
+
+```ruby
+trailing: Icon(
+      alreadySaved ? Icons.favorite : Icons.favorite_border,
+      color: alreadySaved ? Colors.red : null,
+      semanticLabel: alreadySaved ? 'Remove from saved' : 'Save',
+    ),
+```
 
 ## Sumber
 
