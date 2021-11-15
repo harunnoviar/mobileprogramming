@@ -11,7 +11,7 @@ Prodi : Informatika - B
 Project ke-2 adalah contoh program sederhana menampilkan list daftar nama perusahaan yang diusulkan sebagai startup. Dalam program ini pengguna dapat memilih nama-nama perusahaan dan juga dapat membatalkan pilihannya. </br>
 Beberapa hal keterangan dari kode baris program diatas antara lain:
 
-- Merubah isi dari lib/main.dart dengan kode baris program dari [sini](https://github.com/flutter/codelabs/blob/master/startup_namer/step4_infinite_list/lib/main.dart){:target="\_blank" rel="noopener"}
+- Merubah isi dari lib/main.dart dengan kode baris program dari [sini](https://github.com/flutter/codelabs/blob/master/startup_namer/step4_infinite_list/lib/main.dart)
 
 - Melakukan penambahan import package pada baris awal yaitu:
 
@@ -24,6 +24,8 @@ Beberapa hal keterangan dari kode baris program diatas antara lain:
 ```ruby
 $ flutter pub add english_words
 ```
+
+- Menambahkan \_saved pada class \_RandomWordsState
 
 ## Sumber
 
