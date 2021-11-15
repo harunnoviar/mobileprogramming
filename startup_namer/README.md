@@ -108,7 +108,7 @@ void _pushSaved() {
   }
 ```
 
-- Melakukan modifikasi pada theme dengan menambahkan themeData pada class <b>MyApp</b>.
+- Melakukan modifikasi pada theme dengan menambahkan `themeData` pada class `MyApp`.
 
 ```ruby
 theme: ThemeData(
