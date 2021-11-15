@@ -44,7 +44,79 @@ trailing: Icon(
       alreadySaved ? Icons.favorite : Icons.favorite_border,
       color: alreadySaved ? Colors.red : null,
       semanticLabel: alreadySaved ? 'Remove from saved' : 'Save',
-    ),
+),
+```
+
+- Tambahkan <b>onTap</b> setelah <b>trailing</b> diatas pada function <b>\_bulidRow</b>, tujuannya agar icon "heart" dapat di-tap kemudian tersimpan ke favorited state dan apabila di-tap kembali dihapus dari favorited state.
+
+```ruby
+onTap: () {
+        setState(() {
+          if (alreadySaved) {
+            _saved.remove(pair);
+          } else {
+            _saved.add(pair);
+          }
+        });
+},
+```
+
+- Membuat navigator dengan menambahkan pada widget <b>build</b> action button.
+
+```ruby
+actions: [
+          IconButton(
+            icon: const Icon(Icons.list),
+            onPressed: _pushSaved,
+            tooltip: 'Saved Suggestions',
+          ),
+],
+```
+
+- Membuat function <b>\_pushSaved</b> dalam class <b>\_RandomWordsState</b> yang berisi Navigator dan MaterialPageRoute. pada function ini me-return <b>Scaffold</b> yang berisi bar aplikasi denga route baru <b>SavedSuggestions</b>. Sedangkan isi dari route baru tersebut adalah Listview yang terdiri dari baris ListTiles.
+
+```ruby
+void _pushSaved() {
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (context) {
+          final tiles = _saved.map(
+            (pair) {
+              return ListTile(
+                title: Text(
+                  pair.asPascalCase,
+                  style: _biggerFont,
+                ),
+              );
+            },
+          );
+          final divided = tiles.isNotEmpty
+              ? ListTile.divideTiles(
+                  context: context,
+                  tiles: tiles,
+                ).toList()
+              : <Widget>[];
+
+          return Scaffold(
+            appBar: AppBar(
+              title: const Text('Saved Suggestions'),
+            ),
+            body: ListView(children: divided),
+          );
+        },
+    );
+  }
+```
+
+- Melakukan modifikasi pada theme dengan menambahkan themeData pada class <b>MyApp</b>.
+
+```ruby
+theme: ThemeData(
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.white,
+          foregroundColor: Colors.black,
+        ),
+),
 ```
 
 ## Sumber
