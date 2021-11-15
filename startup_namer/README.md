@@ -17,7 +17,7 @@ Beberapa hal keterangan dari kode baris program diatas antara lain:
 'package:english_words/english_words.dart';
 ```
 
-- Sebelum melakukan import diharuskan menambhkan package english_words pada framework flutter dengan cara:
+- Sebelum melakukan import diharuskan menambahkan package <b>english_words</b> pada framework flutter dengan cara:
 
 ```ruby
 $ flutter pub add english_words
