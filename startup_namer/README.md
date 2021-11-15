@@ -25,7 +25,7 @@ Beberapa hal keterangan dari kode baris program diatas antara lain:
 $ flutter pub add english_words
 ```
 
-- Menambahkan \_saved pada class \_RandomWordsState
+- Menambahkan <b>\_saved</b> pada class <b>\_RandomWordsState</b>
 
 ## Sumber
 
