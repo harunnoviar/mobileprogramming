@@ -1,8 +1,8 @@
 # Mobile Programming
 
-Pertemuan ke-6
-Latihan ke 2
-NIM : 12201770
+Pertemuan ke-6*
+Latihan ke 2*
+NIM : 12201770\_
 Nama : Harun Noviar
 Prodi : Informatika - B
 
