@@ -1,14 +1,14 @@
 # Mobile Programming
 
-Pertemuan ke-6
-Latihan ke 1
-NIM : 12201770
-Nama : Harun Noviar
+Pertemuan ke-6 </br>
+Latihan ke 1 </br>
+NIM : 12201770 </br>
+Nama : Harun Noviar </br>
 Prodi : Informatika - B
 
 ## Project 1 startup_manager
 
-Project ke-1 adalah contoh penggunaan framework flutter untuk membuat aplikasi mobile.
+Project ke-1 adalah contoh penggunaan framework flutter untuk membuat aplikasi mobile. </br>
 Beberapa hal keterangan dari kode baris program diatas antara lain:
 
 - Contoh baris program ini menggunakan material design yang merupakan standar bahasa desain visual pada aplikasi mobile ataupun berbasis web. Dan di dalam framework flutter sendiri sangat banyak widget-widget Material yang sudah disiapkan. Penggunaannya dengan menuliskan diawal program meng-import 'package:flutter/material.dart';
