@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.startup_namer">
+    package="com.example.startup_manager">
    <application
-        android:label="startup_namer"
+        android:label="startup_manager"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
