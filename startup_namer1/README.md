@@ -6,7 +6,7 @@ NIM : 12201770 </br>
 Nama : Harun Noviar </br>
 Prodi : Informatika - B
 
-## Project 1 startup_namer
+## Project 1 startup_namer1
 
 Project ke-1 adalah contoh penggunaan framework flutter untuk membuat aplikasi mobile. </br>
 Beberapa hal keterangan dari kode baris program diatas antara lain:

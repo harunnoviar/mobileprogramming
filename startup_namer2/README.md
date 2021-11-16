@@ -6,7 +6,7 @@ NIM : 12201770 </br>
 Nama : Harun Noviar </br>
 Prodi : Informatika - B
 
-## Project 2 startup_manager
+## Project 2 startup_namer2
 
 Project ke-2 adalah contoh program sederhana menampilkan list daftar nama perusahaan yang diusulkan sebagai startup. Dalam program ini pengguna dapat memilih nama-nama perusahaan dan juga dapat membatalkan pilihannya. </br>
 Beberapa hal keterangan dari kode baris program diatas antara lain:
